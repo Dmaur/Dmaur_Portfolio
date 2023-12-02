@@ -1,24 +1,24 @@
 /* Global selectors--------------------------------------- */
-.shortText{
-    display: none;
-}
+
 .g-body{
     display: flex;
     flex-direction: column;
     height: 100vh;
     font-family: 'JetBrains Mono', monospace;
-    background-color: #bbe9db;
-    color: #321d2f;
+    background-color: rgb(207, 192, 138);
+    color: #0b0e09;
     margin: 0;
     padding: 0;
 }
 .g-nav{
-    padding-top: 10px;
+    background-image: url("../originalImages/texture-2408546_1280.jpg");
+    background-size: 100%;
+    padding-top: 20px;
     padding-bottom: 0;
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    background-color:#9ba6a5;
+    /* background-color:#9ba6a5; */
     justify-content: space-around;
     font-size: 1.8rem;
     font-weight: bold;
@@ -28,7 +28,7 @@
     flex-shrink: 1;
     padding: 0 8px 2px 8px;
     margin-top: 0;
-    background-color:  #bbe9db;
+    background-color: rgb(207, 192, 138);
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
    
@@ -47,6 +47,8 @@
     text-decoration: none;
 }
 .g-footer{
+    background-image: url("../originalImages/texture-2408546_1280.jpg");
+    background-size: 100%;
     display: flex;
     justify-self: flex-end;
     justify-content: center;
@@ -58,16 +60,36 @@
     color: aliceblue;
 }
 
-/* Page & Section Selectors */
+.shortText{
+    display: none;
+}
+
+.g-sampleCont{
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    justify-self: start;
+}
+
+.g-sampleCont div{
+    padding: 0 0 0 1.2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+.g-sampleCont img{
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+/* Page & Section Selectors ----------------------------*/
 #p-about{
     display: flex;
     flex-wrap: nowrap;
-    padding-top: 80px;
     padding-left: 20px;
     flex-direction: row;
     justify-content: center;
-    align-content: center;
-    height: 100%;
+    height: 100vh;
 }
 
 #p-about img{
@@ -77,20 +99,26 @@
     border-color: black;
     border-style: solid;
     border-width: 5px;
+    align-self: center;
 
+}
+#p-about div{
+    align-self: center;
 }
 
 #p-about p{
     font-size: 1.3rem;
-    height: 150px;
-    max-width: 600px;
-    padding: 0 10px 0 1rem;
+    max-width: 600px; 
+    padding: 0 10px 0 2rem;
     
 }
 
-#p-about h1{
+#p-about #myName{
     margin: 0;
-    padding: 0 0 .25rem 1rem;
+    padding: 0 0 0 2rem;
+    font-weight: 900;
+    font-size: 2em;
+
 }
 
 #p-resHeader{
@@ -106,6 +134,13 @@
     flex-direction: column;
     max-width: 1300px;
     align-self: center;
+}
+
+#p-webAppMain{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
 }
 @media only screen and (max-width: 875px){
     .longText{
