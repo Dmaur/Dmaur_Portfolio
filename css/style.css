@@ -151,8 +151,16 @@
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 650px){
     #p-about img{
         display:none
+    }
+    #p-about #myName{
+        padding:0;
+       
+    }
+    #p-about p{
+        padding: 0;
+        
     }
 }
