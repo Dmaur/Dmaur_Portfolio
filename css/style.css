@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    font-family: 'Chakra Petch', monospace;
+    font-family:'Chakra Petch', monospace,'JetBrains', monospace;
     background-color:#0cca98;
     color:#331940;
     margin: 0;
@@ -75,7 +75,8 @@
     padding: 0 0 0 1.2rem;
     display: flex;
     flex-direction: column;
-    max-width: 500px;
+    width: 500px;
+    height: 450px;
 }
 .g-sampleCont img{
     height: 300px;
@@ -84,11 +85,12 @@
     border-color: #20615b;
     border-style: solid;
     border-width: 10px;
-    opacity: 0.8;
+    opacity: 0.5;
 }
 .g-sampleCont img:hover{
     opacity: 1;
     transform: scale(1.05) rotate(-3deg);
+    border-color: #00ffcc;
 }
 
 ul{
@@ -144,9 +146,10 @@ ul{
 }
 
 #p-resMain{
+    padding: 0 1.5rem 0 1.5rem;
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
+    max-width: 1500px;
     align-self: center;
 }
 
