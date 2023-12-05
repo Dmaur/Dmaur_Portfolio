@@ -66,6 +66,28 @@
     display: none;
 }
 
+.g-sampHead{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-bottom: solid #00ffcc;
+    border-width: 10px;
+    margin-bottom: 25px;
+}
+
+.g-sampHead h2{
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.g-sampHead p{
+    max-width: 1000px;
+    align-self: center;
+    margin-top: 1.5rem;
+}
+
+
 .g-sampleCont{
     padding: 2.5rem 1rem 1rem 1rem;
     display: flex;
@@ -113,7 +135,15 @@ i{
     padding: 10px;
     margin: 0;
 }
+strong{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.7rem;
+}
 
+h2{
+    margin:0;
+    font-size: 2rem;
+}
 
 /* Page & Section Selectors ----------------------------*/
 #p-about{
@@ -148,7 +178,7 @@ i{
 
 #p-about #myName{
     margin: 0;
-    padding: 0 0 0 2rem;
+    padding: 3rem 0 0 2rem;
     font-weight: 900;
     font-size: 2em;
 
@@ -182,20 +212,17 @@ i{
     flex-direction: column;
     height: fit-content;
 }
-#p-webAppMain h1{
+
+
+#p-otherSamplesMain{
     align-self: center;
-    font-size: 5em;
-    text-decoration: underline;
+    width: 80%;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
 }
 
-#p-webAppMain h2{
-    margin:0;
-    font-size: 2rem;
-}
-#p-webAppMain strong{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 1.7rem;
-}
 
 @media only screen and (max-width: 875px){
     .longText{
@@ -209,10 +236,6 @@ i{
 @media only screen and (max-width: 650px){
     #p-about img{
         display:none
-    }
-    #p-about #myName{
-        padding:0;
-       
     }
     #p-about p{
         padding: 0;
